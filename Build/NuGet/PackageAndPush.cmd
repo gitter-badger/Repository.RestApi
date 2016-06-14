@@ -1,15 +1,8 @@
 @echo off
 echo Creating NuGet package
-set Name=Repository.RestApi
-set PackageId=Repository.NET-RestApi
-set Version=1.0.0
-
-echo.
-echo Cleaning convention based working directory...
-rmdir Working\build /s /q
-rmdir Working\content /s /q
-rmdir Working\lib /s /q
-rmdir Working\tools /s /q
+set Name=%APPVEYOR_PROJECT_NAME%
+set Version=%APPVEYOR_BUILD_VERSION%
+cd /d %~dp0
 
 echo.
 echo Creating convention based working directory...
@@ -19,35 +12,17 @@ mkdir Working\lib
 mkdir Working\tools
 
 echo.
-echo Copying lib for net35...
-xcopy ..\..\Source\%Name%.Net35\bin\Release\%Name%.* Working\lib\net35\* /s /e /y
-
-echo.
-echo Copying lib for net40...
-xcopy ..\..\Source\%Name%.Net40\bin\Release\%Name%.* Working\lib\net40\* /s /e /y
-
-echo.
-echo Copying lib for net45...
-xcopy ..\..\Source\%Name%.Net45\bin\Release\%Name%.* Working\lib\net45\* /s /e /y
-
-echo.
-echo Copying lib for net46...
-xcopy ..\..\Source\%Name%.Net46\bin\Release\%Name%.* Working\lib\net46\* /s /e /y
-
-echo.
-echo Copying lib for net461...
-xcopy ..\..\Source\%Name%.Net461\bin\Release\%Name%.* Working\lib\net461\* /s /e /y
+echo Copying to lib...
+xcopy ..\..\Source\%Name%.Net35\bin\Release\* Working\lib\net35\* /s /e /y
+xcopy ..\..\Source\%Name%.Net40\bin\Release\* Working\lib\net40\* /s /e /y
+xcopy ..\..\Source\%Name%.Net45\bin\Release\* Working\lib\net45\* /s /e /y
+xcopy ..\..\Source\%Name%.Net46\bin\Release\* Working\lib\net46\* /s /e /y
+xcopy ..\..\Source\%Name%.Net461\bin\Release\* Working\lib\net461\* /s /e /y
 
 echo.
 echo Packaging...
-..\..\Tools\NuGet\nuget.exe pack Working\%PackageId%.nuspec -Version %Version%
-
-echo.
-echo Moving package...
-move %PackageId%.%Version%.nupkg Packages
+..\..\Tools\NuGet\nuget.exe pack Working\%NuGetPackageId%.nuspec -Version %Version%
 
 echo.
 echo Pushing package...
-..\..\Tools\NuGet\nuget.exe push Packages\%PackageId%.%Version%.nupkg %NuGetApiKey% -Source https://www.nuget.org/api/v2/package
-
-pause
+..\..\Tools\NuGet\nuget.exe push %NuGetPackageId%.%Version%.nupkg %NuGetApiKey% -Source https://www.nuget.org/api/v2/package
