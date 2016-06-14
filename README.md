@@ -3,4 +3,3 @@
 - [NuGet Package](https://www.nuget.org/packages/Repository.NET-RestApi)
 - [Release Notes](https://github.com/skthomasjr/Repository-RestApi/releases)
 - [License](LICENSE.md)
-
