@@ -11,13 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.RestApi.Net46", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.RestApi.Net45", "Repository.RestApi.Net45\Repository.RestApi.Net45.csproj", "{26AF2A6A-6093-44D0-8CF6-2828E0AF58A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.RestApi.Net40", "Repository.RestApi.Net40\Repository.RestApi.Net40.csproj", "{28C6242F-8AF2-4796-9010-3F311651D449}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.RestApi.TestConsole", "Repository.RestApi.TestConsole\Repository.RestApi.TestConsole.csproj", "{FF31AF24-45AB-49D2-9961-3D5ABFDF9109}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Repository.RestApi\Repository.RestApi.projitems*{28c6242f-8af2-4796-9010-3f311651d449}*SharedItemsImports = 4
 		Repository.RestApi\Repository.RestApi.projitems*{82431e28-c7d1-43e8-8d72-a86b716b4df1}*SharedItemsImports = 4
 		Repository.RestApi\Repository.RestApi.projitems*{2cb387b7-e0de-45be-b55e-e8cc0cf519e5}*SharedItemsImports = 4
 		Repository.RestApi\Repository.RestApi.projitems*{368d9b80-f616-42aa-9a86-aa95ede82610}*SharedItemsImports = 13
@@ -40,10 +37,6 @@ Global
 		{26AF2A6A-6093-44D0-8CF6-2828E0AF58A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26AF2A6A-6093-44D0-8CF6-2828E0AF58A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26AF2A6A-6093-44D0-8CF6-2828E0AF58A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28C6242F-8AF2-4796-9010-3F311651D449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28C6242F-8AF2-4796-9010-3F311651D449}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28C6242F-8AF2-4796-9010-3F311651D449}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28C6242F-8AF2-4796-9010-3F311651D449}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FF31AF24-45AB-49D2-9961-3D5ABFDF9109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF31AF24-45AB-49D2-9961-3D5ABFDF9109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF31AF24-45AB-49D2-9961-3D5ABFDF9109}.Release|Any CPU.ActiveCfg = Release|Any CPU
