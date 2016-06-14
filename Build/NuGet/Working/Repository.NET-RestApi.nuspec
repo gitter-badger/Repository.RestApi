@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Repository.NET-RestApi</id>
+    <version>0.0.0</version>
+    <authors>Scott Keith Thomas, Jr.</authors>
+    <description>Respository.NET-RestApi is the REST API implementation of a Repository.NET repository.</description>
+    <tags>Repository.NET REST</tags>
+    <iconUrl>https://github.com/skthomasjr/Repository.NET-RestApi/tree/master/Build/NuGet/Package/Icon.png</iconUrl>
+    <licenseUrl>https://github.com/skthomasjr/Repository.NET-RestApi/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/skthomasjr/Repository.NET-RestApi</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<dependencies>
+      <dependency id="Microsoft.Net.Http" version="1.0.0" />
+      <dependency id="Newtonsoft.Json" version="1.0.0" />
+      <dependency id="Repository.NET" version="1.0.0" />
+    </dependencies>
+  </metadata>
+</package>
