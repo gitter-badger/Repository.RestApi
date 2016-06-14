@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.RestApi.Net45", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.RestApi.TestConsole", "Repository.RestApi.TestConsole\Repository.RestApi.TestConsole.csproj", "{FF31AF24-45AB-49D2-9961-3D5ABFDF9109}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{85DB65BB-B2AF-47ED-A1A8-642BB3F882CF}"
+	ProjectSection(SolutionItems) = preProject
+		..\Build\NuGet\PackageAndPush.cmd = ..\Build\NuGet\PackageAndPush.cmd
+		..\Build\NuGet\Working\Repository.NET-RestApi.nuspec = ..\Build\NuGet\Working\Repository.NET-RestApi.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Repository.RestApi\Repository.RestApi.projitems*{82431e28-c7d1-43e8-8d72-a86b716b4df1}*SharedItemsImports = 4
