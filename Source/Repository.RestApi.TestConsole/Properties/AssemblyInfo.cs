@@ -2,11 +2,11 @@
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Repository.RestApi.TestConsole")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Repository.RestApi test console.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Scott Keith Thomas, Jr.")]
 [assembly: AssemblyProduct("Repository.RestApi.TestConsole")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright © 2016 Scott Keith Thomas, Jr.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
