@@ -4,8 +4,8 @@
     <id>Repository.NET-RestApi</id>
     <version>0.0.0</version>
     <authors>Scott Keith Thomas, Jr.</authors>
-    <description>Respository.NET-RestApi is the REST API implementation of a Repository.NET repository.</description>
-    <tags>Repository.NET REST</tags>
+    <description>A Respository.NET implementation supporting REST APIs.</description>
+    <tags>api async asynchronous generic repository rest restful</tags>
     <iconUrl>https://raw.githubusercontent.com/skthomasjr/Repository.RestApi/master/Build/NuGet/Package.png</iconUrl>
     <licenseUrl>https://raw.githubusercontent.com/skthomasjr/Repository.RestApi/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/skthomasjr/Repository.NET-RestApi</projectUrl>
